@@ -11,7 +11,6 @@ font-family: 'Roboto', sans-serif; */
 body {
   font-family: "Oswald", sans-serif;
   background: #153b30 url("../img/pattern-bg.png");
-  overflow: hidden;
 }
 
 .container {
@@ -333,22 +332,24 @@ body {
   display: flex;
 }
 
-.Hero-slider .slick-dots {
+.Hero-slider .slick-dots,
+.product-slider .slick-dots {
   bottom: -20%;
 }
 
-.Hero-slider .slick-dots li button:before {
+.Hero-slider .slick-dots li button:before,
+.product-slider .slick-dots li button:before {
   height: 7px;
   content: "";
   background-color: #ffffff;
 }
 
 .Hero-slider .slick-next {
-  right: -30%;
+  right: -20%;
 }
 
 .Hero-slider .slick-prev {
-  left: -30%;
+  left: -20%;
 }
 
 .Hero-slider .slick-next:before,
@@ -356,10 +357,25 @@ body {
   font-size: 35px;
 }
 
-.Hero-slider .slick-next:before {
+.Hero-slider .slick-next:before,
+.product-slider .slick-next:before {
   content: url(../img/hero-slider-right-arrow.png);
 }
-.Hero-slider .slick-prev:before {
+.Hero-slider .slick-prev:before,
+.product-slider .slick-prev:before {
   content: url(../img/hero-slider-leftt-arrow.png);
 }
 /********/
+
+.main {
+  padding: 100px 0;
+}
+
+.product-slider img {
+  border: 10px solid #08512d;
+  border-radius: 5px;
+}
+
+.product-slider .slick-slide {
+  margin: 0 15px;
+}

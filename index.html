@@ -113,9 +113,7 @@
             data-fancybox
             data-type="iframe"
             data-preload="false"
-            data-width="640"
-            data-height="480"
-          class="playBtn">
+            class="playBtn">
             <img src="img/play-icon.png" alt="play-icon">
           </a>
         </div>
@@ -134,9 +132,7 @@
             data-fancybox
             data-type="iframe"
             data-preload="false"
-            data-width="640"
-            data-height="480"
-          class="playBtn">
+            class="playBtn">
             <img src="img/play-icon.png" alt="play-icon">
           </a>
         </div>
@@ -155,9 +151,7 @@
             data-fancybox
             data-type="iframe"
             data-preload="false"
-            data-width="640"
-            data-height="480"
-          class="playBtn">
+            class="playBtn">
             <img src="img/play-icon.png" alt="play-icon">
           </a>
         </div>
@@ -176,9 +170,7 @@
             data-fancybox
             data-type="iframe"
             data-preload="false"
-            data-width="640"
-            data-height="480"
-          class="playBtn">
+            class="playBtn">
             <img src="img/play-icon.png" alt="play-icon">
           </a>
         </div>
@@ -186,15 +178,68 @@
     </div>
   </div>
 
+  <div class="main">
+    <div class="container">
+      <div class="product-slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+    </div>
+    <br/><br/><hr />
+  </div>
+
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/fancybox.umd.js"></script>
 
   <script type="text/javascript">
     $('.Hero-slider .container').slick({
       dots: true
+    });
+
+    $('.product-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   </script>
 </body>

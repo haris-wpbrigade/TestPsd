@@ -68,6 +68,7 @@ body {
 
 .nav {
   position: sticky;
+  z-index: 99;
 }
 
 .nav-top {
@@ -110,7 +111,9 @@ body {
 }
 
 .nav-bottom {
-  background: 0px 4px 14px 0px #012c1fa6;
+  background: #08512d url("../img/pattern-bg.png");
+  box-shadow: rgb(1 44 31 / 65%) 0px 0px 14px 0px;
+  overflow: hidden;
 }
 
 .nav-bottom .container {
@@ -161,7 +164,7 @@ body {
   width: 255px;
   height: 40px;
   display: flex;
-  background: #012c1f;
+  background: #012c1f url("../img/pattern-bg.png");
 }
 
 .nav-form input {
@@ -192,8 +195,8 @@ body {
 .titleBar {
   position: relative;
   font-family: "Oswald", sans-serif;
-  background: #1b7d3b;
-  z-index: -1;
+  background: #1b7d3b url("../img/pattern-bg.png");
+  overflow: hidden;
 }
 
 .titleBar .container {
@@ -212,7 +215,7 @@ body {
 
 .titleBar-logoDiv {
   position: relative;
-  padding: 23px 60px;
+  padding: 23px 70px;
   background: #ffffff;
   transform: skew(-16deg);
   display: flex;
@@ -223,9 +226,9 @@ body {
 .titleBar-logoDiv::after {
   content: "";
   position: absolute;
-  right: -460px;
+  right: -1072%;
   top: 0;
-  width: 500px;
+  width: 1073%;
   background: #ffffff;
   height: 100%;
 }
@@ -246,15 +249,29 @@ body {
 }
 
 .Hero-slider {
-  background: linear-gradient(rgb(1 44 31 / 80%), rgb(1 44 31 / 80%)),
-    url(../img/hero-bg.png);
+  min-height: 550px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.Hero-slider > .bg-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(1 44 31 / 0%) url(../img/hero-bg.png);
   background-position: center;
+  opacity: 0.25;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .Hero-slider .slider-box {
-  padding: 90px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -262,9 +279,10 @@ body {
 
 .slider-box > .info-box {
   width: 550px;
+  margin-left: 63px;
 }
 
-.slider-box > .info-box > h1 {
+.slider-box > .info-box > h2 {
   font-size: 50px;
   line-height: 50px;
   color: #ffffff;
@@ -278,10 +296,12 @@ body {
   line-height: 26px;
   letter-spacing: 20;
   color: #ffffff;
+  width: 90%;
 }
 
 .slider-box > .img-box {
   position: relative;
+  margin-right: 93px;
 }
 
 .slider-box > .img-box > .playBtn {
@@ -307,3 +327,39 @@ body {
 .slider-box > .img-box > .playBtn > img {
   margin-left: 10px;
 }
+
+/* for slick slider to display slider-box in flex */
+.Hero-slider .slick-initialized .slick-slide {
+  display: flex;
+}
+
+.Hero-slider .slick-dots {
+  bottom: -20%;
+}
+
+.Hero-slider .slick-dots li button:before {
+  height: 7px;
+  content: "";
+  background-color: #ffffff;
+}
+
+.Hero-slider .slick-next {
+  right: -30%;
+}
+
+.Hero-slider .slick-prev {
+  left: -30%;
+}
+
+.Hero-slider .slick-next:before,
+.Hero-slider .slick-prev:before {
+  font-size: 35px;
+}
+
+.Hero-slider .slick-next:before {
+  content: url(../img/hero-slider-right-arrow.png);
+}
+.Hero-slider .slick-prev:before {
+  content: url(../img/hero-slider-leftt-arrow.png);
+}
+/********/

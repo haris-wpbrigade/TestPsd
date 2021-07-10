@@ -101,7 +101,7 @@
     <div class="container">
       <div class="slider-box">
         <div class="info-box">
-          <h2>get ready for new adidas bands</h2>
+          <h2 class="h1">get ready for new adidas bands</h2>
           <p>
             Adidas tracks all begin with a starting gate and end with a finish line, but everything in between varies from track to track. Because no two tracks are alike, this action sport keeps you on your toes wherever you are racing.
           </p>
@@ -120,7 +120,7 @@
       </div>
       <div class="slider-box">
         <div class="info-box">
-          <h2>get ready for new adidas bands</h2>
+          <h2 class="h1">get ready for new adidas bands</h2>
           <p>
             Adidas tracks all begin with a starting gate and end with a finish line, but everything in between varies from track to track. Because no two tracks are alike, this action sport keeps you on your toes wherever you are racing.
           </p>
@@ -139,7 +139,7 @@
       </div>
       <div class="slider-box">
         <div class="info-box">
-          <h2>get ready for new adidas bands</h2>
+          <h2 class="h1">get ready for new adidas bands</h2>
           <p>
             Adidas tracks all begin with a starting gate and end with a finish line, but everything in between varies from track to track. Because no two tracks are alike, this action sport keeps you on your toes wherever you are racing.
           </p>
@@ -155,32 +155,14 @@
             <img src="img/play-icon.png" alt="play-icon">
           </a>
         </div>
-      </div>
-      <div class="slider-box">
-        <div class="info-box">
-          <h2>get ready for new adidas bands</h2>
-          <p>
-            Adidas tracks all begin with a starting gate and end with a finish line, but everything in between varies from track to track. Because no two tracks are alike, this action sport keeps you on your toes wherever you are racing.
-          </p>
-        </div>
-        <div class="img-box">
-          <img src="img/video-thumbnail-img.png" alt="video-thumbnail-img">
-
-          <a href="https://www.youtube.com/embed/L9szn1QQfas?autoplay=1"
-            data-fancybox
-            data-type="iframe"
-            data-preload="false"
-            class="playBtn">
-            <img src="img/play-icon.png" alt="play-icon">
-          </a>
-        </div>
-      </div>
+      </div> 
     </div>
   </div>
 
   <div class="main">
-    <div class="container">
-      <div class="product-slider">
+    <div class="container flex">
+      <div class="main-content">
+        <div class="product-slider">
           <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
           <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
           <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
@@ -192,8 +174,71 @@
           <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
           <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
           <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-    </div>
-    <br/><br/><hr />
+        </div> 
+        <hr />
+        <div class="posts">
+          <div class="card">
+            <img src="img/post-img.png" alt="">
+            <div class="card-info">
+              <h3>2019 national champions crowned at rebook</h3>
+              <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+            </div>
+            <a href="#">Read More</a>
+          </div>
+          <div class="card">
+            <img src="img/post-img.png" alt="">
+            <div class="card-info">
+              <h3>2019 national champions</h3>
+              <p>Membership has its perks.</p>
+            </div>
+            <a href="#">Read More</a>
+          </div>
+          <div class="card">
+            <img src="img/post-img.png" alt="">
+            <div class="card-info">
+              <h3>2019 national champions crowned at rebook</h3>
+              <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks</p>
+            </div>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside">
+        <div class="event">
+          <h3>events</h3>
+          <div class="container">
+            <div class="event-info">
+              <span>1</span>
+              <div class="info-box">
+                <a href="#">show in usa</a>
+                <p>usa</p>
+              </div>
+            </div>
+            <div class="event-info">
+              <span>2</span>
+              <div class="info-box">
+                <a href="#">adidas show in usa</a>
+                <p>usa</p>
+              </div>
+            </div>
+            <div class="event-info">
+              <span>3</span>
+              <div class="info-box">
+                <a href="#">adidas show</a>
+                <p>usa</p>
+              </div>
+            </div>
+            <div class="event-info">
+              <span>4</span>
+              <div class="info-box">
+                <a href="#">adidas in usa</a>
+                <p>usa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
 
@@ -219,10 +264,17 @@
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             infinite: true,
             dots: true
+          }
+        },
+        {
+          breakpoint: 786,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
           }
         },
         {

@@ -359,11 +359,11 @@ body {
 }
 
 .Hero-slider .slick-next {
-  right: -10%;
+  right: -5%;
 }
 
 .Hero-slider .slick-prev {
-  left: -10%;
+  left: -5%;
 }
 
 .product-slider .slick-next {
@@ -541,4 +541,80 @@ hr {
 
 .posts .card a:hover {
   background: #156b3e url(../img/pattern-bg.png);
+}
+
+.banners {
+  padding: 12px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banners .banner-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  overflow: hidden;
+}
+
+.banners .banner-box:nth-child(even) {
+  direction: rtl;
+}
+
+.banner-box img {
+  width: 490px;
+  height: 100%;
+}
+
+.banner-box .banner-info {
+  position: relative;
+  background: #288245 url(../img/pattern-bg.png);
+  color: #ffffff;
+  text-align: left;
+  padding: 62px 25px 50px 25px;
+}
+
+/* .banner-box .banner-info:nth-child(even) {
+  background: #145837 url(../img/pattern-bg.png);
+} */
+
+.banner-info::before {
+  position: absolute;
+  content: url(../img/pattern-bg.png);
+  height: 100%;
+  width: 100%;
+  left: -15%;
+  top: 0;
+  background: #35874f;
+  transform: skew(-16deg);
+}
+
+.banners .banner-box:nth-child(even) .banner-info::before {
+  left: 0;
+  right: -15%;
+  transform: skew(16deg);
+  /* background: #145837; */
+}
+
+.banner-info h3 {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.banner-info p {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .banner-box img {
+    width: 380px;
+  }
 }

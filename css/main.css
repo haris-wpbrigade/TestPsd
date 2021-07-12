@@ -95,7 +95,7 @@ body {
   line-height: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  background: rgb(8 81 45 / 65%);
+  background: #0f5533 url(../img/pattern-bg.png);
   padding: 10px 38px;
   margin-left: 11px;
   display: inline-block;
@@ -109,12 +109,12 @@ body {
 }
 
 .nav-CTA-btns a:first-child {
-  background: rgb(27 125 59 / 65%);
+  background: #2f854c url(../img/pattern-bg.png);
   padding: 10px 31px;
 }
 
 .nav-CTA-btns a:hover {
-  background: #2fac59;
+  background: #2fac59 url(../img/pattern-bg.png);
 }
 
 .nav-bottom {
@@ -152,11 +152,11 @@ body {
 }
 
 .nav-bottom .nav-list > li > a:hover {
-  background: #1b7d3b;
+  background: #1b7d3b url(../img/pattern-bg.png);
 }
 
 .nav-bottom .nav-list .active a {
-  background: #1b7d3b;
+  background: #1b7d3b url(../img/pattern-bg.png);
 }
 
 .nav-bottom a {
@@ -175,8 +175,12 @@ body {
 }
 
 .nav-form input {
+  font-family: "Oswald", sans-serif;
+  color: #879b95;
+  width: 100%;
   padding: 0 14px;
   font-size: 16px;
+  letter-spacing: 1px;
   color: #fff;
   background: transparent;
   outline: none;
@@ -196,7 +200,7 @@ body {
 .nav-form button {
   background: transparent;
   border: none;
-  margin-right: 6px;
+  margin-right: 14px;
 }
 
 .titleBar {
@@ -348,7 +352,7 @@ body {
 }
 
 .product-slider .slick-dots {
-  bottom: -40%;
+  bottom: -34%;
 }
 
 .Hero-slider .slick-dots li button:before,
@@ -359,19 +363,19 @@ body {
 }
 
 .Hero-slider .slick-next {
-  right: -5%;
+  right: -10%;
 }
 
 .Hero-slider .slick-prev {
-  left: -5%;
+  left: -10%;
 }
 
 .product-slider .slick-next {
-  right: -7%;
+  right: -6%;
 }
 
 .product-slider .slick-prev {
-  left: -7%;
+  left: -6%;
 }
 
 .Hero-slider .slick-next:before,
@@ -390,7 +394,7 @@ body {
 /********/
 
 .main {
-  padding: 80px 0;
+  padding: 80px 0 85px;
 }
 
 .main .flex {
@@ -400,12 +404,12 @@ body {
 .flex .main-content {
   flex: 1;
   width: 70%;
-  padding: 0 40px 0 0;
+  padding: 0 30px 0 0;
 }
 
 .event {
   position: relative;
-  width: 100%;
+  width: 256px;
   height: fit-content;
 }
 
@@ -423,15 +427,16 @@ body {
 .event .container {
   background: #1b7d3b url(../img/pattern-bg.png);
   padding-top: 20px;
-  padding-bottom: 22px;
-  padding-left: 27px;
+  padding-bottom: 10px;
+  padding-left: 28px;
 }
 
 .event-info {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  margin-left: -7px;
 }
 
 .event-info span {
@@ -441,7 +446,7 @@ body {
   line-height: 24px;
   background: #ffffff;
   color: #1b7d3b;
-  width: 50px;
+  width: 46px;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -458,7 +463,8 @@ body {
   font-weight: 500;
   line-height: 24px;
   color: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
+  display: block;
   text-underline-position: under;
 }
 
@@ -471,7 +477,7 @@ body {
 }
 
 hr {
-  margin-top: 88px;
+  margin-top: 80px;
 }
 
 .product-slider img {
@@ -485,7 +491,7 @@ hr {
 }
 
 .posts {
-  padding: 30px 0;
+  padding: 38px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 20px;
@@ -507,7 +513,7 @@ hr {
 }
 
 .card .card-info {
-  padding: 16px 20px 22px;
+  padding: 11px 14px 20px;
 }
 
 .card .card-info h3 {
@@ -544,7 +550,6 @@ hr {
 }
 
 .banners {
-  padding: 12px 0;
   position: relative;
   overflow: hidden;
 }
@@ -573,9 +578,9 @@ hr {
   padding: 62px 25px 50px 25px;
 }
 
-/* .banner-box .banner-info:nth-child(even) {
+.banner-box:nth-child(even) .banner-info {
   background: #145837 url(../img/pattern-bg.png);
-} */
+}
 
 .banner-info::before {
   position: absolute;
@@ -588,11 +593,11 @@ hr {
   transform: skew(-16deg);
 }
 
-.banners .banner-box:nth-child(even) .banner-info::before {
+.banner-box:nth-child(even) .banner-info::before {
   left: 0;
   right: -15%;
   transform: skew(16deg);
-  /* background: #145837; */
+  background: #215f42;
 }
 
 .banner-info h3 {
@@ -611,6 +616,127 @@ hr {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.contact {
+  background: #08512d url(../img/pattern-bg.png);
+  padding: 40px 0 46px;
+  display: grid;
+  place-items: center;
+}
+
+.contact h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px 26px;
+  padding: 30px 0 0;
+  place-items: center;
+}
+
+.contact-form .gender,
+.contact-form .message,
+.contact-form button {
+  grid-column: 1/3;
+}
+
+.contact-form .gender,
+.contact-form .message {
+  width: 100%;
+}
+
+.contact-form label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contact-form .name input,
+.contact-form .email input,
+.contact-form .country select,
+.contact-form .state select {
+  width: 255px;
+  height: 36px;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.contact-form .country select,
+.contact-form .state select {
+  color: #787878;
+}
+
+.contact-form .gender > div {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form .gender input {
+  height: 22px;
+  width: 22px;
+  margin-top: 12px;
+  vertical-align: text-bottom;
+}
+
+.contact-form .gender .sm-txt {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.contact-form .message {
+  margin-top: -5px;
+}
+
+.contact-form .message textarea {
+  width: 100%;
+  height: 90px;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.contact-form .message textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #787878;
+}
+
+.contact-form button {
+  background: #012c1f url(../img/pattern-bg.png);
+  padding: 6px 60px;
+  margin-bottom: -10px;
+  border: none;
+  outline: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.contact-form button:hover {
+  background: #027250 url(../img/pattern-bg.png);
 }
 
 @media (max-width: 1024px) {

@@ -573,22 +573,12 @@ hr {
   padding: 62px 25px 50px 25px;
 }
 
-.banner-info::before {
-  position: absolute;
-  content: url(../img/pattern-bg.png);
-  height: 100%;
-  width: 100%;
-  left: -15%;
-  top: 0;
-  background: #35874f;
-  transform: skew(-16deg);
+.banners .banner-box img {
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
 }
 
-.banner-box:nth-child(even) .banner-info::before {
-  left: 0;
-  right: -15%;
-  transform: skew(16deg);
-  background: #215f42;
+.banners .banner-box:nth-child(even) img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
 }
 
 .banner-info h3 {
@@ -791,7 +781,7 @@ hr {
 }
 
 .footer-nav ul li a:hover {
-  opacity: 0.5;
+  text-decoration: underline;
 }
 
 footer span {

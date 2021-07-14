@@ -79,7 +79,7 @@ body {
 }
 
 .nav-top {
-  padding: 10px 0;
+  padding: 13px 0 8px;
 }
 
 .nav-top .container {
@@ -96,8 +96,8 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   background: #0f5533 url(../img/pattern-bg.png);
-  padding: 10px 38px;
-  margin-left: 11px;
+  padding: 10px 44px;
+  margin-left: 7px;
   display: inline-block;
   transform: skew(-16deg);
   transition: 0.3s all;
@@ -110,7 +110,7 @@ body {
 
 .nav-CTA-btns a:first-child {
   background: #2f854c url(../img/pattern-bg.png);
-  padding: 10px 31px;
+  padding: 10px 32px;
 }
 
 .nav-CTA-btns a:hover {
@@ -140,7 +140,7 @@ body {
 }
 
 .nav-bottom .nav-list a {
-  padding: 19px 30px;
+  padding: 20px 30px 18px;
   display: inline-block;
   transform: skew(-16deg);
   transition: 0.3s all;
@@ -160,6 +160,8 @@ body {
 }
 
 .nav-bottom a {
+  font-size: 18px;
+  line-height: 18px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -178,7 +180,7 @@ body {
   font-family: "Oswald", sans-serif;
   color: #879b95;
   width: 100%;
-  padding: 0 14px;
+  padding: 0 13px;
   font-size: 16px;
   letter-spacing: 1px;
   color: #fff;
@@ -200,7 +202,7 @@ body {
 .nav-form button {
   background: transparent;
   border: none;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 .titleBar {
@@ -222,11 +224,12 @@ body {
   font-weight: 500;
   line-height: 54px;
   text-transform: uppercase;
+  margin: 0 0 3px -6px;
 }
 
 .titleBar-logoDiv {
   position: relative;
-  padding: 23px 70px;
+  padding: 23px 82px 27px 72px;
   background: #ffffff;
   transform: skew(-16deg);
   display: flex;
@@ -248,6 +251,8 @@ body {
 .titleBar-logoDiv p,
 .titleBar-logoDiv img {
   transform: skew(16deg);
+  padding: -2px;
+  margin: -2px -8px;
 }
 
 .titleBar-logoDiv p {
@@ -256,8 +261,11 @@ body {
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-left: -25px;
+  margin-top: 0px;
 }
 
 .Hero-slider {
@@ -296,7 +304,7 @@ body {
 
 .slider-box .info-box h2 {
   line-height: 50px;
-  margin-bottom: 38px;
+  margin-bottom: 56px;
 }
 
 .slider-box .info-box p {
@@ -315,7 +323,7 @@ body {
 
 .slider-box .img-box .playBtn {
   position: absolute;
-  top: 50%;
+  top: 51%;
   transform: translate(-50%, -50%);
   left: 50%;
   background: rgb(1 44 31 / 66%);
@@ -342,13 +350,17 @@ body {
   display: flex;
 }
 
+.Hero-slider .slick-dotted.slick-slider {
+  margin-bottom: 8px;
+}
+
 .product-slider.slick-dotted.slick-slider {
   width: 90%;
   margin: 0 auto;
 }
 
 .Hero-slider .slick-dots {
-  bottom: -20%;
+  bottom: -16%;
 }
 
 .product-slider .slick-dots {
@@ -394,7 +406,8 @@ body {
 /********/
 
 .main {
-  padding: 80px 0 85px;
+  padding: 80px 0;
+  overflow: hidden;
 }
 
 .main .flex {
@@ -427,7 +440,7 @@ body {
 .event .container {
   background: #1b7d3b url(../img/pattern-bg.png);
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   padding-left: 28px;
 }
 
@@ -435,7 +448,7 @@ body {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   margin-left: -7px;
 }
 
@@ -477,7 +490,7 @@ body {
 }
 
 hr {
-  margin-top: 80px;
+  margin-top: 78px;
 }
 
 .product-slider img {
@@ -494,7 +507,7 @@ hr {
   padding: 38px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 .posts .card {
@@ -509,11 +522,12 @@ hr {
 
 .posts .card img {
   min-height: 150px;
+  height: 162px;
   width: 100%;
 }
 
 .card .card-info {
-  padding: 11px 14px 20px;
+  padding: 16px 10px 27px;
 }
 
 .card .card-info h3 {
@@ -522,7 +536,7 @@ hr {
   line-height: 24px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 }
 
 .card .card-info p {
@@ -550,6 +564,7 @@ hr {
 }
 
 .banners {
+  padding-top: 2px;
   position: relative;
   overflow: hidden;
 }
@@ -570,15 +585,15 @@ hr {
   position: relative;
   color: #ffffff;
   text-align: left;
-  padding: 62px 25px 50px 25px;
+  padding: 63px 44px 46px 30px;
 }
 
 .banners .banner-box img {
-  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
 }
 
 .banners .banner-box:nth-child(even) img {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
 }
 
 .banner-info h3 {
@@ -588,7 +603,7 @@ hr {
   line-height: 24px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .banner-info p {
@@ -601,7 +616,7 @@ hr {
 
 .contact {
   background: #08512d url(../img/pattern-bg.png);
-  padding: 40px 0 48px;
+  padding: 40px 0;
   display: grid;
   place-items: center;
 }
@@ -619,7 +634,7 @@ hr {
 .contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px 32px;
+  grid-gap: 10px 28px;
   padding: 20px 0 0;
   place-items: center;
 }
@@ -639,7 +654,7 @@ hr {
 }
 
 .contact-form .input-field {
-  width: 255px;
+  width: 257px;
   margin-top: 5px;
 }
 
@@ -651,8 +666,8 @@ hr {
 .input-field input[type="text"],
 .input-field input[type="email"],
 .input-field select {
-  padding: 9px;
-  margin-top: 4px;
+  padding: 9px 10px;
+  margin-top: 5px;
   width: 100%;
   color: #787878;
 }
@@ -681,13 +696,14 @@ hr {
   text-transform: capitalize;
   color: #ffffff;
   margin-right: 12px;
+  margin-left: 2px;
 }
 
 .input-field textarea {
   width: 100%;
-  height: 90px;
-  margin-top: 5px;
-  padding-top: 10px;
+  height: 89px;
+  margin-top: 2px;
+  padding-top: 8px;
   padding-left: 10px;
 }
 
@@ -701,7 +717,7 @@ hr {
 .contact-form button {
   background: #012c1f url(../img/pattern-bg.png);
   padding: 6px 60px;
-  margin-bottom: -10px;
+  margin-top: 3px;
   border: none;
   outline: none;
   font-family: "Oswald", sans-serif;
@@ -719,7 +735,7 @@ hr {
 }
 
 .footer {
-  padding: 33px 0 28px;
+  padding: 30px 0;
   display: grid;
   place-items: center;
   background: #012c1f url(../img/pattern-bg.png);
@@ -741,8 +757,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12px;
-  margin-bottom: 13px;
+  margin-top: 15px;
+  margin-bottom: 12px;
 }
 
 .footer-nav ul li {
@@ -791,8 +807,214 @@ footer span {
   line-height: 1.714;
 }
 
-@media (max-width: 1024px) {
-  .banner-box img {
-    width: 380px;
+/* Tablet view */
+@media (max-width: 1023px) {
+
+  .notification{
+    padding: 17px 0 12px;
   }
+
+  .close-icon{
+    right: 16px;
+  }
+
+  .nav-top {
+    padding: 11px 0 12px;
+  }
+
+  .nav-CTA-btns a {
+    padding: 10px 47px;
+    margin-left: 7px;
+  }
+
+  .nav-CTA-btns a:first-child {
+    padding: 10px 35px;
+  }
+
+  .nav-bottom .nav-list a {
+    padding: 22px 21px 22px 22px;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .nav-form {
+    width: 261px;
+    height: 42px;
+  }
+
+  .nav-form input {
+    padding: 0px 6px 0 15px;
+  }
+
+  .nav-form button {
+    margin-right: 17px;
+  }
+
+  .nav-form input::placeholder {
+    letter-spacing: 0;
+  }
+
+  .titleBar h1 {
+    font-size: 40px;
+    margin-left: -3px;
+  }
+
+  .titleBar-logoDiv {
+    padding: 14px 73px 19px 76px;
+  }
+
+  .h1{
+    font-size: 40px;
+    font-family: "Oswald";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .Hero-slider {
+    min-height: 462px;
+    padding: 0px 0 85px;
+  }
+
+  .Hero-slider .img-box {
+    margin-top: 42px;
+    margin-right: 235px;
+  }
+
+  .Hero-slider img {
+    width: 290px;
+  }
+
+  .Hero-slider .img-box .playBtn {
+    left: 52%;
+    top: 49%;
+  }
+
+  .Hero-slider .img-box .playBtn img {
+    width: 31px;
+  }
+  
+
+  .Hero-slider .info-box {
+    margin-top: 34px;
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .Hero-slider .slider-box .info-box h2 {
+    margin-bottom: 13px;
+    letter-spacing: 0.3px;
+  }
+
+  .Hero-slider .slider-box .info-box p {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  .Hero-slider .slick-dots {
+    bottom: -24%;
+    left: -5%;
+  }
+
+  .Hero-slider .slick-dots li button:before,
+  .product-slider .slick-dots li button:before {
+    height: 6px;
+    width: 20px;
+  }
+
+  .main {
+    padding: 61px 0;
+  }
+
+  .flex .main-content {
+    padding: 0 50px 0 0;
+  }
+
+  .event{
+    width: 261px;
+  }
+
+  .event h3 {
+    padding: 13px 20px;
+  }
+
+  .event .container {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+  }
+
+  .event-info {
+    margin-bottom: 12px;
+    margin-left: 2px;
+  }
+
+  .event-info span {
+    width: 48px;
+    padding: 12px 20px;
+  }
+
+  .event-info .info-box {
+    padding-left: 13px;
+  }
+
+  .info-box a {
+    margin-bottom: 7px;
+  }
+
+  .product-slider img {
+    height: 200px;
+  }
+
+  .product-slider .slick-dots {
+    bottom: -26%;
+  }
+
+  .product-slider.slick-dotted.slick-slider {
+    width: 100%;
+  }
+
+  hr {
+    margin-top: 78px;
+  }
+
+  .posts {
+    padding: 40px 0;
+    grid-gap: 30px;
+  }
+
+  .posts .card img {
+    min-height: 167px;
+  }
+
+  .card .card-info {
+    padding: 16px 12px 46px;
+  }
+
+  .card .card-info h3{
+    margin-bottom: 11px;
+  }
+
+  .posts .card a{
+    padding: 11px;
+    letter-spacing: 1px;
+  }
+
+  .banners .banner-box img {    
+    min-width: 348px;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  }
+
+  .banners .banner-box:nth-child(even) img {
+    min-width: 348px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  }
+
+  .banner-box .banner-info {
+    padding: 64px 44px 68px 30px;
+  }
+
 }

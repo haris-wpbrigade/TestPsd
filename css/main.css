@@ -913,7 +913,7 @@ footer span {
   
 
   .Hero-slider .info-box {
-    margin-top: 34px;
+    margin-top: 60px;
     width: 50%;
     margin-left: 0;
   }
@@ -926,12 +926,15 @@ footer span {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 1px;
-    font-weight: 100;
   }
 
   .Hero-slider .slick-dots {
-    bottom: -20%;
-    left: -6%;
+    bottom: -25%;
+    left: -7%;
+  }
+
+  .Hero-slider .slick-dots li{
+    padding: 22px 0 0;
   }
 
   .Hero-slider .slick-dots li button:before,
@@ -1043,7 +1046,7 @@ footer span {
   }
 
   .contact-form{
-    padding: 21px 0 0;
+    padding: 22px 0 0;
   }
 
   .contact-form .input-field{
@@ -1110,4 +1113,97 @@ footer span {
   .banners .banner-box:nth-child(even) img{
     min-width: 266px;
   }
+}
+
+@media (max-width: 767px){
+  .titleBar,.nav-bottom{
+    display: none;
+  }
+
+  .notification{
+    padding: 14px 40px 14px 0px;
+  }
+
+  .nav-top {
+    position: relative;
+    height: 100px;
+    padding: 18px 0 0;
+  }
+
+  .nav-top .container{
+    display: block;
+  }
+
+  .nav-top .nav-lft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-top .nav-lft .logo img{
+    width: 94px;
+  }
+
+  .nav-top .toggleBtn{
+    display: block;
+  }
+
+  .nav-CTA-btns{
+    position: absolute;
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .nav-CTA-btns a{
+    transform: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-CTA-btns a:first-child {
+    padding: 10px 46px;
+    border-right: 1px solid #ffffff;
+  }
+
+  .nav-CTA-btns a span{
+    transform: none;
+  }
+
+  .Hero-slider .slick-initialized .slick-slide {
+    flex-direction: column-reverse;
+  }
+
+  .main .flex{
+    flex-direction: column;
+  }
+
+  .posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-box,
+  .banners .banner-box:nth-child(even){
+    flex-direction: column;
+  }
+
+  .banners .banner-box img,.banners .banner-box:nth-child(even) img {    
+    min-width: 100%;
+    clip-path: none;
+    object-fit: cover;
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }

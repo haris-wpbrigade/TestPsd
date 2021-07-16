@@ -376,7 +376,13 @@
 
   <script type="text/javascript">
     $('.Hero-slider .container').slick({
-      dots: true
+      dots: true,
+      responsive: {
+        breakpoint: 767,
+        settings: {
+          centerMode: true,
+        }
+      }
     });
 
     $('.product-slider').slick({

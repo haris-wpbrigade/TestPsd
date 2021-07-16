@@ -29,7 +29,7 @@ body {
 
 .notification {
   position: sticky;
-  padding: 16px 0 12px;
+  padding: 18px 0 12px;
   background: #f9f9f9 url("../img/pattern-bg.png");
   transition: 0.3s all;
 }
@@ -707,6 +707,13 @@ hr {
   background: #1b7d3b url(../img/pattern-bg.png);
 }
 
+.input-field select{
+  appearance: none;
+  background-image: url(../img/dropdown-arrow.png);
+  background-position: 96% center;
+  background-repeat: no-repeat;
+}
+
 .input-field .sm-txt {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -1006,6 +1013,10 @@ footer span {
 
   .info-box a {
     margin-bottom: 5px;
+  }
+
+  .product-slider.slick-dotted.slick-slider {
+    width: 100%;
   }
 
   .product-slider img {
@@ -1460,7 +1471,7 @@ footer span {
   }
 
   .input-field textarea {
-    margin-top: 2px;
+    margin-top: 7px;
   }
 
   .contact-form button {

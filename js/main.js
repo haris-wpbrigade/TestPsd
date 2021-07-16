@@ -6,9 +6,11 @@ toggleBtn.addEventListener('click', () => {
     if (ToggleBtnIMG.src.match("../img/burger-icon.png")){
         NavMenu.classList.add('active')
         ToggleBtnIMG.src = "../img/menu-close-icon.png"
+        document.body.style.overflow = 'hidden'
     } else {
         NavMenu.classList.remove('active')
         ToggleBtnIMG.src = "../img/burger-icon.png"
+        document.body.style.overflow = 'scroll'
     }
 })
 

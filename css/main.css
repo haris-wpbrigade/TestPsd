@@ -1191,6 +1191,7 @@ footer span {
 
   .nav-top .toggleBtn{
     display: block;
+    cursor: pointer;
   }
 
   .nav-CTA-btns{

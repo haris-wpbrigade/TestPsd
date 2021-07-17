@@ -1466,6 +1466,10 @@ footer span {
     margin-top: 4px;
   }
 
+  .input-field select {
+    background-position: 97% center;
+  }
+
   .contact-form .span-field:first-child{
     margin-top: 8px;
   }

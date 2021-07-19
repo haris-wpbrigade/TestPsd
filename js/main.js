@@ -10,7 +10,7 @@ toggleBtn.addEventListener('click', () => {
     } else {
         NavMenu.classList.remove('active')
         ToggleBtnIMG.src = "../img/burger-icon.png"
-        document.body.style.overflow = 'scroll'
+        document.body.style.overflow = 'hidden scroll'
     }
 })
 
@@ -18,3 +18,17 @@ const NotificationBox = document.querySelector('.notification')
 const CloseBtn = document.querySelector('.close-icon')
 
 CloseBtn.addEventListener('click', () => NotificationBox.style.display = 'none')
+
+const SearchForm = document.querySelector('.nav-form input')
+const SearchBtn = document.getElementById('SearchBtn')
+const CloseForm = document.getElementById('CloseBtn')
+
+SearchForm.addEventListener('input' , ()=> {
+    SearchBtn.style.display = 'none'
+    CloseForm.style.display = 'block'
+})
+
+CloseForm.addEventListener('click', ()=>{
+    CloseForm.style.display = 'none'
+    SearchBtn.style.display = 'block'
+})

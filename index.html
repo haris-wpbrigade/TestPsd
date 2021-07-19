@@ -82,8 +82,11 @@
         </nav>
         <form class="nav-form">
           <input type="text" placeholder="search">
-          <button type="submit">
+          <button id="SearchBtn" type="submit">
             <img src="img/search-icon.png" alt="search-icon">
+          </button>
+          <button id="CloseBtn" type="reset">
+            <img src="img/x-mark.png" alt="close-icon">
           </button>
         </form>
       </div>
@@ -374,13 +377,20 @@
   <script type="text/javascript">
     $('.Hero-slider .container').slick({
       dots: true,
-      responsive: {
-        breakpoint: 767,
-        settings: {
-          arrows: false,
-          centerMode: true,
+      responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+          }
         }
-      }
+      ]
     });
 
     $('.product-slider').slick({

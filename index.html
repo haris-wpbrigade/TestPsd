@@ -108,7 +108,6 @@
       <img src="img/hero-slider-leftt-arrow.png" alt="left arrow" class="prev-btn">
       <img src="img/hero-slider-right-arrow.png" alt="right arrow" class="next-btn">
     </div>
-    <div class="bg-pattern"></div>
     <div class="container">
       <div class="slider-box">
         <div class="info-box">
@@ -391,6 +390,8 @@
   <script type="text/javascript">
     $('.Hero-slider .container').slick({
       dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
       prevArrow: $('.Hero-slider .indicators .prev-btn'),
       nextArrow: $('.Hero-slider .indicators .next-btn'),
       responsive: [

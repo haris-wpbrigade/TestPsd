@@ -104,6 +104,10 @@
   </div>
 
   <div class="Hero-slider">
+    <div class="indicators">
+      <img src="img/hero-slider-leftt-arrow.png" alt="left arrow" class="prev-btn">
+      <img src="img/hero-slider-right-arrow.png" alt="right arrow" class="next-btn">
+    </div>
     <div class="bg-pattern"></div>
     <div class="container">
       <div class="slider-box">
@@ -184,18 +188,24 @@
   <div class="main">
     <div class="container flex">
       <div class="main-content">
-        <div class="product-slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
-          <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+        <div class="products">
+          <div class="indicators">
+            <img src="img/hero-slider-leftt-arrow.png" alt="left arrow" class="prev-btn">
+            <img src="img/hero-slider-right-arrow.png" alt="right arrow" class="next-btn">
+          </div>
+          <div class="product-slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+            <img src="img/thubnail-slider-img.png" alt="thumbnail slider">
+          </div>
         </div>
         <hr />
         <div class="posts">
@@ -381,6 +391,8 @@
   <script type="text/javascript">
     $('.Hero-slider .container').slick({
       dots: true,
+      prevArrow: $('.Hero-slider .indicators .prev-btn'),
+      nextArrow: $('.Hero-slider .indicators .next-btn'),
       responsive: [
         {
           breakpoint: 981,
@@ -400,6 +412,8 @@
     $('.product-slider').slick({
       dots: true,
       infinite: true,
+      prevArrow: $('.products .indicators .prev-btn'),
+      nextArrow: $('.products .indicators .next-btn'),
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,

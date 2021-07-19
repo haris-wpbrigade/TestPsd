@@ -1007,8 +1007,8 @@ footer span {
   }
 
   .Hero-slider .slick-dots {
-    bottom: -25%;
-    left: 0;
+    bottom: -68px;
+    left: -77px;
   }
 
   .Hero-slider .slick-dots li{
@@ -1378,7 +1378,7 @@ footer span {
 
   .Hero-slider .slick-dots{
     left: -4%;
-    bottom: -11%;
+    bottom: -7%;
   }
 
   .main {

@@ -991,7 +991,7 @@ footer span {
   }
 
   .Hero-slider .slick-dots li{
-    padding: 22px 0 0;
+    padding: 0;
   }
 
   .Hero-slider .slick-dots li button:before,

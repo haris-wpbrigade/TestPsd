@@ -226,14 +226,18 @@
         </div>
         <div class="banners">
           <div class="banner-box">
-            <img src="img/zig-zag-img-1.png" alt="zig-zag-img-1">
+            <div class="banner-img">
+              <img src="img/zig-zag-img-1.png" alt="zig-zag-img-1">
+            </div>
             <div class="banner-info">
               <h3>2019 national champions crowned at reebok</h3>
               <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks.</p>
             </div>
           </div>
           <div class="banner-box">
-            <img src="img/zig-zag-img-2.png" alt="zig-zag-img-2">
+            <div class="banner-img">
+              <img src="img/zig-zag-img-2.png" alt="zig-zag-img-2">
+            </div>
             <div class="banner-info">
               <h3>2019 national champions crowned at reebok</h3>
               <p>Membership has its perks. Joining ADIDAS means you can race at your local tracks.</p>
@@ -320,7 +324,7 @@
         </div>
         <div class="input-field span-field">
           <label for="gender">gender</label><br>
-          <input type="radio" name="gender" id="male" value="Male">
+          <input type="radio" name="gender" id="male" value="Male" checked="checked">
           <label for="male" class="sm-txt">Male</label>
           <input type="radio" name="gender" id="female" value="Female">
           <label for="female" class="sm-txt">Female</label>
@@ -379,7 +383,7 @@
       dots: true,
       responsive: [
         {
-          breakpoint: 980,
+          breakpoint: 981,
           settings: {
             arrows: false,
           }
@@ -402,6 +406,14 @@
       responsive: [
         {
           breakpoint: 1024,
+          settings: {
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 980,
           settings: {
             arrows: false,
             slidesToShow: 3,

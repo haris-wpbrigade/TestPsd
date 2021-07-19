@@ -23,12 +23,19 @@ const SearchForm = document.querySelector('.nav-form input')
 const SearchBtn = document.getElementById('SearchBtn')
 const CloseForm = document.getElementById('CloseBtn')
 
-SearchForm.addEventListener('input' , ()=> {
-    SearchBtn.style.display = 'none'
-    CloseForm.style.display = 'block'
+SearchForm.addEventListener('input' , ()=> { 
+    if(SearchForm.value !== ''){
+        SearchBtn.style.display = 'none'
+        CloseForm.style.display = 'block'
+    } else {
+        SearchBtn.style.display = 'block'
+        CloseForm.style.display = 'none'
+    }
 })
 
 CloseForm.addEventListener('click', ()=>{
     CloseForm.style.display = 'none'
     SearchBtn.style.display = 'block'
 })
+
+// window.addEventListener('resize' , )
